@@ -9,7 +9,7 @@ $(call inherit-product, device/xiaomi/dipper/device.mk)
 # Inherit some common NezukoOS stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 NEZUKO_BUILD_TYPE := OFFICIAL
-NEZUKO_MAINTAINER=TonyJoaca
+NEZUKO_MAINTAINER := TonyJoaca
 TARGET_INCLUDE_WIFI_EXT := true
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
