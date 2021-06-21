@@ -6,11 +6,15 @@
 
 $(call inherit-product, device/xiaomi/dipper/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Nezuko stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
+NEZUKO_BUILD_TYPE := OFFICIAL
+NEZUKO_MAINTAINER := TonyJoaca
+TARGET_INCLUDE_WIFI_EXT := true
+$(call inherit-product, vendor/nezuko/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_dipper
+PRODUCT_NAME := nezuko_dipper
 PRODUCT_DEVICE := dipper
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8
